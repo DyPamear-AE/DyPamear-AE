@@ -1,6 +1,6 @@
 # DyPamear: Efficient and Scalable Dynamic Graph Pattern Mining on Practical Processing-in-Memory Architecture
 
-**DyPamear** is an efficient **dynamic graph pattern mining (DGPM)** system for the UPMEM **Processing-in-Memory (PIM)** architecture.
+**DyPamear** is an efficient **Dynamic Graph Pattern Mining (DGPM)** system for the UPMEM **Processing-in-Memory (PIM)** architecture.
 
 The goal of DyPamear is to accelerate incremental pattern-aware execution of DGPM using UPMEM DPUs. It integrates **asynchronous pipelining**, **bitmap-based set intersection**, and other optimizations tailored for near-data processing architecture.
 
