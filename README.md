@@ -50,7 +50,7 @@ GRAPH=<graph_name> UPDATES=<updated_edges> PATTERN=<pattern_name> make test
 Example:
 
 ```bash
-GRAPH=WK UPDATES=<WK_updates> PATTERN=CLIQUE3 make test
+GRAPH=WK UPDATES=WK_updates PATTERN=CLIQUE3 make test
 ```
 
 > 💡 The available values for `GRAPH` and `PATTERN` are defined in `include/common.h`.  
@@ -80,7 +80,7 @@ All configuration entries are defined in `include/common.h`.
 3. Build and test:
 
 ```bash
-GRAPH=AM0312 PATTERN=CLIQUE3 make test
+GRAPH=WK UPDATES=WK_updates PATTERN=CLIQUE3 make test
 ```
 
 ### ➕ Adding Custom Patterns
@@ -98,7 +98,7 @@ GRAPH=AM0312 PATTERN=CLIQUE3 make test
 3. Build and run:
 
 ```bash
-GRAPH=AM0312 PATTERN=TELE5 make test
+GRAPH=WK UPDATES=WK_updates PATTERN=TELE5 make test
 ```
 
 ---
@@ -112,7 +112,7 @@ DyPamear is designed to scale from hundreds to tens of thousands of DPUs.
 To run DyPamear on a specific number of DPUs:
 
 ```bash
-GRAPH=AM0312 PATTERN=CLIQUE3 EXTRA_FLAGS="-DV_NR_DPUS=5120" make test
+GRAPH=WK UPDATES=WK_updates PATTERN=CLIQUE3 EXTRA_FLAGS="-DV_NR_DPUS=5120" make test
 ```
 
 ### 📊 Full Scalability Sweep
@@ -120,7 +120,7 @@ GRAPH=AM0312 PATTERN=CLIQUE3 EXTRA_FLAGS="-DV_NR_DPUS=5120" make test
 To automatically benchmark DyPamear from **640** to **20,480** DPUs:
 
 ```bash
-GRAPH=AM0312 PATTERN=CLIQUE3 make test_sc
+GRAPH=WK UPDATES=WK_updates PATTERN=CLIQUE3 make test_sc
 ```
 
 This script:
