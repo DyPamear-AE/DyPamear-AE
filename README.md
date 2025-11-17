@@ -8,7 +8,7 @@ The goal of DyPamear is to accelerate incremental pattern-aware execution of DGP
 
 ## 🚀 Key Features
 
-- Skew-aware workload distribution for balanced execution across thousands of DPUs.
+- Load-aware task distribution for balanced execution across thousands of DPUs.
 - Asynchronous loader–worker pipeline using WRAM FIFO.
 - Bitmap-based set intersection acceleration on DPUs.
 - Lightweight performance profiling and cycle analysis tools.
